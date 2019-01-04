@@ -1,4 +1,4 @@
-package 函数
+package main
 import ("fmt")
 /*接口*/
 type Animal interface {

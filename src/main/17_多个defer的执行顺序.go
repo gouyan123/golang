@@ -1,4 +1,4 @@
-package 函数
+package main
 import (
 	_ "fmt"
 	"fmt"

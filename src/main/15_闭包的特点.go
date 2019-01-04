@@ -1,7 +1,10 @@
-package 函数
+package main
+
 import (
+	"fmt"
 	_ "fmt"
 )
+
 func test01() int {
 	var x int		/*函数test01被调用的时候，才给x分配内存，才初始化为0*/
 	x++
@@ -17,6 +20,6 @@ func test02() func() int {
 }
 
 func main()  {
-	test01()
-	test02()
+	fmt.Println(test01())
+	fmt.Println(test02()())
 }
