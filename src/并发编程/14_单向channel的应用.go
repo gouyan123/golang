@@ -11,13 +11,14 @@ func producer(out chan<- int)  {
 	}
 	close(out)
 }
+
 func consumer(in <-chan int)  {
-	//num := <-in
+	//相当于 num := <-in
 	for num := range in {
 		fmt.Println("num = ",num)
 	}
-
 }
+
 func main()  {
 	ch := make(chan int)
 	go producer(ch)
